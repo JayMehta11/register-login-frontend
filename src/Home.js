@@ -10,7 +10,7 @@ export default function Home() {
     }, [user])
     let getUser = () => {
         if(user){
-            fetch(`http://localhost:5000/api/auth`,{
+            fetch(`https://register--login.herokuapp.com/api/auth`,{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json",
@@ -28,7 +28,7 @@ export default function Home() {
 
     let EditUser = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:5000/api/auth/edit`,{
+        fetch(`https://register--login.herokuapp.com/api/auth/edit`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
