@@ -11,7 +11,7 @@ export default function Login() {
     let HandleSignIn = (e) => {
         // setLoader(true);
         e.preventDefault();
-        fetch("http://localhost:5000/api/auth/login", {
+        fetch("https://register--login.herokuapp.com/api/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
