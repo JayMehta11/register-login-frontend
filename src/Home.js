@@ -13,7 +13,7 @@ export default function Home() {
         <div>
             <h1>Home</h1>
             <p>{user?.emailId}</p>
-            <button onClick={
+            <button className = "btn btn-danger" onClick={
                 ()=>{
                     window.localStorage.removeItem("userToken");
                     setUser(null);
